@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"
+ <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>My personal website</title> 
+    
+    </body>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FFFDD0 0%, #800020 100%);
+            color: #FFFDD0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav {
+            width: 100;
+            max-width: 900px;
+            background:#560319;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: #58111A;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav li {
+            margin: 0 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #e6dbff;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 8px 15px;
+            transition: background-color 0.3 ease, color 0.3s ease;
+            border-radius: 25px;
+        }
+
+        nav a:hover,
+    nav a.active {
+      background-color: pink;
+      color: #560319;
+      box-shadow: 0 4px 12px rgba(176, 45, 45, 0.7);
+        }
+
+        main {
+            max-width: 900px;
+            background: #58111A;
+            border-radius: 15px;
+            padding: 30px 40px;
+            box-shadow: #673147;
+            min-height: 300px;
+            color: #f0e9ff;
+
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 2.8rem;
+            text-align: center;
+            text-shadow: black;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        footer{
+            margin-top: 50px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+            text-align: center;
+        }
+        #project-note {
+            margin-top: 30px;
+            font-style: italic;
+            color: #666;
+            text-align: center;
+        }
+        .img_deg{
+            float: right;
+            width: 40%;
+            margin-top: 10;
+        }
+        </style>
+        </head>
+        <body> 
+
+        <nav>
+        <ul>
+        <li><a href="#home" class=":active" onnclick= "showsection('home',this)">Home</a></li>
+        <li><a href="RESUME WANI.html" aria-current="page">About Me</a></li>
+        <li> <a href="Contact.html" onclick="showsection('contact', this)">Contact</a></li>
+        <li><a href="MY GALLERY.html" onclick="showsection(gallery,this)">Gallery</a></li>
+        </ul>
+        </nav>
+
+        <main>
+            <section id="home-section">
+                <h1>｡ ⁠♡°༺ Welcome to My Website ༻° ⁠♡｡</h1>
+                <p>  Hello! I am Nik Nuramirah Syazwani, a developer passionate about creating accessible and responsive websites. I am currently studying in IML 470 Introduction To Web Development. </p>
+            </section>
+            <br>
+                    <section id="content">
+                    <h2> My Interests </h2>
+                    <br>
+                    <img class= "img_deg" src="heart-glowing.gif" alt="heart-glowing" style="width: 20%; height: 20%; border-radius: 10px; margin-top: 20px "/>
+                    <P> Here are some topics i enjoy exploring: </P>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/html" target="_blank" rel="noopener">HTML Tutorials</a></li>
+                        <li><a href="https://www.w3schools.com/css/" target="_blank" rel="noopener">CSS Documentation</a></li>
+                        <li><a href="https://javascript.info/" target="_blank" rel="noopener">Javascript Guide</a></li>
+                    
+                    </ul>
+                    </section>
+                    <br>
+                    <br>
+                    <section id="project-note">
+                        
+                        <p><em>This website was created as part of the IML 470 course project.</em></p>
+                    </section>
+        </main>   
+                <footer>
+                    <p>Contact me: <a href="2024697002@student.uitm.edu.my" >2024697002@student.uitm.edu.my</a></p>
+                </footer >
+                
+        </body>
+        </html>
